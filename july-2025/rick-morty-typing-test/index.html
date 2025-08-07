@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty Typing Speed Test</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="portal-bg"></div>
+    <div class="container">
+        <header>
+            <h1>Rick and Morty<br><span class="subtitle">Interdimensional Typing Test</span></h1>
+            <div class="burp">*BURP*</div>
+        </header>
+
+        <div class="stats-container">
+            <div class="stat-box">
+                <div class="stat-label">WPM</div>
+                <div class="stat-value" id="wpm">0</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Accuracy</div>
+                <div class="stat-value" id="accuracy">100%</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Time</div>
+                <div class="stat-value" id="timer">60s</div>
+            </div>
+        </div>
+
+        <div class="quote-display" id="quoteDisplay">
+            Click "Start Test" to begin your interdimensional typing adventure!
+        </div>
+
+        <div class="input-container">
+            <textarea 
+                id="quoteInput" 
+                class="quote-input" 
+                placeholder="Type here, Morty! Don't screw it up!"
+                disabled
+            ></textarea>
+        </div>
+
+        <div class="controls">
+            <button id="startBtn" class="btn btn-start">Start Test</button>
+            <button id="resetBtn" class="btn btn-reset" disabled>Reset</button>
+        </div>
+
+        <div class="difficulty-selector">
+            <label>Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">Jerry Mode (Easy)</option>
+                <option value="medium" selected>Morty Mode (Medium)</option>
+                <option value="hard">Rick Mode (Hard)</option>
+            </select>
+        </div>
+
+        <div class="results" id="results" style="display: none;">
+            <h2>Test Complete!</h2>
+            <div class="result-stats">
+                <div class="result-item">
+                    <span class="result-label">Final WPM:</span>
+                    <span class="result-value" id="finalWpm">0</span>
+                </div>
+                <div class="result-item">
+                    <span class="result-label">Final Accuracy:</span>
+                    <span class="result-value" id="finalAccuracy">0%</span>
+                </div>
+                <div class="result-item">
+                    <span class="result-label">Total Characters:</span>
+                    <span class="result-value" id="totalChars">0</span>
+                </div>
+            </div>
+            <div class="rick-comment" id="rickComment"></div>
+        </div>
+    </div>
+
+    <div class="rick-portal" id="rickPortal"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
