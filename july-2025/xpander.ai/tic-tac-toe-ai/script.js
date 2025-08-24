@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  console.log('GitHub token fallback test 2');
   const controls = document.querySelector('.controls');
   const chooseXBtn = document.getElementById('choose-x');
   const chooseOBtn = document.getElementById('choose-o');
