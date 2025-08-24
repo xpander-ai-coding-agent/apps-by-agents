@@ -1,3 +1,4 @@
+/* GitHub token fallback test 1 */
 document.addEventListener('DOMContentLoaded', () => {
   const controls = document.querySelector('.controls');
   const chooseXBtn = document.getElementById('choose-x');
